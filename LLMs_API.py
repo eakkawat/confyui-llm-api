@@ -7,15 +7,17 @@ class LLMsApi:
     def INPUT_TYPES(s):
         return {"required": {"image": {"IMAGE"}}}
 
-    RETURN_NAMES = "text"
+    RETURN_NAMES = "Text"
     RETURN_TYPES = "STRING"
 
     FUNCTION = "run"
 
-    CATEGORY = "LLMs/api"
+    CATEGORY = "EakLLMs"
 
     def run(self):
         return "test"
 
 
 NODE_CLASS_MAPPINGS = {"X_LLMsAPI": LLMsApi}
+
+NODE_DISPLAY_NAME_MAPPINGS = {"X_LLMsAPI": "LLMs API"}
