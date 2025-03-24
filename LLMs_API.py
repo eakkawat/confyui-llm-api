@@ -1,4 +1,4 @@
-class LLMApi:
+class LLMsApi:
 
     def __init__(self):
         pass
@@ -12,5 +12,10 @@ class LLMApi:
 
     FUNCTION = "run"
 
+    CATEGORY = "LLMs/api"
+
     def run(self):
         return "test"
+
+
+NODE_CLASS_MAPPINGS = {"X_LLMsAPI": LLMsApi}
