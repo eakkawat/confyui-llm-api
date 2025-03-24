@@ -10,5 +10,7 @@ class LLMApi:
     RETURN_NAMES = "text"
     RETURN_TYPES = "STRING"
 
+    FUNCTION = "run"
+
     def run(self):
         return "test"
